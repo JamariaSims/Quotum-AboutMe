@@ -5,25 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jamaria Sims</title>
+    <style>
+        /*
+        ----Page Styling----
+        */
+        :root{
+            --H1_Size1: 4rem;
+            --H2_Size2: 3rem;
+            --H3_Size3: 2rem;
+            --H4_Size4: 1rem;
+            --Color1: #edede9;
+            --Color2: #d6ccc2;
+            --Color3: #f5ebe0;
+            --Color4: #e3d5ca;
+            --Color5: #d5bdaf;
+        }
+        html,body{
+            width: 100%;
+            margin: 0% auto;
+            text-align: center;
+        }
+        h1{
+            font-size: var(--H1_Size1);
+        }
+        h2{
+            font-size: var(--H2_Size2);
+        }
+        /*
+        ----Header Styling----
+        */
+        header{
+            display: flex;
+            text-align: center;
+            margin: 0% auto;
+            padding-block: 1rem;
+        }
+        .Header-Title_Container{
+            width: 100%;
+        }
+        .Header-Title{
+            text-align: center;
+            width: 100%;
+            margin: 0% auto;
+            padding-top: 15rem;
+        }
+        .Header-Nav{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin: 0% auto;
+            text-align: center;
+        }
+        .Header-Nav a{
+            margin: 0% auto;
+            padding-top: 10rem;
+            font-size: 2rem;
+        }
+        .Profile-Container{
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+        }
+        .Profile-Picture{
+            border-radius: 5rem;
+        }
+    </style>
 </head>
 <body>
-    <section>
-        <p>
-            Hey there, I'm Jamaria! A full stack developer on a
-            mission to change the world line by line. I like to
-            refer coding as magic because with coding, anything is
-            possible! Everyday I look for new ways to bring code
-            into my environment. Coming up with new ways to solve
-            daily challenges whenever it's possible.
-            </p>
-            <br />
-            <p>
-            Since I was a child, I have been fascinated with coding
-            and have always wondered how the gears work in the video
-            games I played. Over time, that mystery became clear and
-            I had to learn more about it.
-            </p>  
-    </section>
+    <header>
+        <section class="Profile-Container">
+            <h2 class="Profile-Title">Jamaria Sims</h2>
+            <img class="Profile-Picture" src="./assets/IMG_8713.jpg" alt="A picture of Jamaria." height="500rem">
+        </section>
+        <section class="Header-Title_Container">
+            <h1 class="Header-Title">About Me</h1>
+            <nav class="Header-Nav">
+                <a>My Story</a>
+                <a>My Vision</a>
+                <a>Interests & Hobbies</a>
+                <a>Gallery</a>
+            </nav>
+        </section>
+    </header>
 </body>
 </html>
 
