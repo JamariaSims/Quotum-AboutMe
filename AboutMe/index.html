@@ -17,49 +17,66 @@
             --Text_Size1: 1rem;
             --Text_Size2: 1.5rem;
             --Text_Size3: 2rem;
-            --Color1: #edede9;
-            --Color2: #d6ccc2;
-            --Color3: #f5ebe0;
-            --Color4: #e3d5ca;
-            --Color5: #d5bdaf;
+            --Color1: #2D2727;
+            --Color2: #413543;
+            --Color3: #8F43EE;
+            --Color4: #F0EB8D;
         }
         html,body{
             width: 100%;
             margin: 0% auto;
             text-align: center;
+            background: var(--Color4);
+        }
+        h1,h2,h3,h4{
+            color: var(--Color1);
         }
         h1{
             font-size: var(--H_Size1);
         }
         h2{
             font-size: var(--H_Size2);
-            color: rgb(255, 0, 0);
+            color: rgb(184, 0, 0);
         }
         h3{
             font-size: var(--H_Size3);
+            border-bottom:var(--Color2) solid 1px ;
         }
         h4{
             font-size: var(--H_Size4);
+            border-bottom:var(--Color2) solid 1px ;
         }
-        /*
-        ----Header Styling----
-        */
         header{
             display: flex;
-            text-align: center;
             margin: 0% auto;
-            padding-block: 1rem;
+            width: 90%;
         }
         a{
             text-decoration: none;
-            color: #ff0000;
-            padding: 0% auto;
+            color: var(--Color3);
             
         }
         a:hover{
             color: black;
-            border-bottom: black solid 0.1rem;
         }
+        p{
+            color: var(--Color2);
+            font-size: var(--Text_Size2);
+        }
+        article p{
+            text-align: left;
+            margin: 0% auto;
+            width: 80%;
+            line-height: 3rem;
+        }
+        footer{
+            display: flex;
+            justify-content: space-between;
+            border-top:var(--Color2) solid 1px ;
+        }
+        /*
+        ----Header Styling----
+        */
         .Header-Title_Container{
             width: 100%;
         }
@@ -68,6 +85,8 @@
             width: 100%;
             margin: 0% auto;
             padding-top: 15rem;
+            animation-name: FadeIn;
+            animation-duration: 1s; 
         }
         .Header-Nav{
             display: flex;
@@ -78,23 +97,45 @@
         }
         .Header-Nav a{
             margin: 0% auto;
-            padding-top: 10rem;
             font-size: 2rem;
+        }
+        .Head-Icon1{
+            animation-name: FadeIn;
+            animation-duration: 1.1s; 
+        }
+        .Head-Icon2{
+            animation-name: FadeIn;
+            animation-duration: 1.2s; 
+        }
+        .Head-Icon3{
+            animation-name: FadeIn;
+            animation-duration: 1.3s; 
+        }
+        .Head-Icon4{
+            animation-name: FadeIn;
+            animation-duration: 1.4s; 
         }
         .Profile-Container{
             display: flex;
             flex-direction: column;
             width: 20%;
+            animation-name: FadeIn;
+            animation-duration: 1s; 
         }
         .Profile-Picture{
-            border-radius: 5rem;
+            width: 25rem;
+            border-radius: 100%;
         }
-        article p{
-            text-align: left;
+        .A-TAG_Container{
+            display: flex;
+            flex-direction: column;
             margin: 0% auto;
-            width: 80%;
-            font-size: var(--Text_Size2);
-            line-height: 3rem;
+            padding: 1rem;
+            margin: 5%;
+        }
+        .A-TAG_Container:hover{
+            border: var(--Color3) solid 1px;
+            border-radius: 5%;
         }
         .Article-My_Vision p{
             text-align: center;
@@ -110,36 +151,54 @@
         }
         .Interests-Container p, .Hobbies-Container p{
             text-align: center;
-            font-size: var(--Text_Size3);
         }
         .Interests-Container img, .Hobbies-Container img{
             width: 39.5rem;
             height: 30rem;
         }
-        footer{
-            display: flex;
-            justify-content: space-between;
-            margin-block:5rem;
-        }
+    @keyframes FadeIn {
+    0% {
+    transform:scale3d(10,10,10)
+    }
+    100% {
+    transform: scale3d(1,1,1);
+    }
+    
+}
     </style>
 </head>
 <body>
     <header>
         <section class="Profile-Container">
-            <h2 class="Profile-Title">Jamaria Sims</h2>
-            <img class="Profile-Picture" src="./assets/IMG_8713.jpg" alt="A picture of Jamaria." height="500rem">
+            <img class="Profile-Picture" src="./assets/IMG_8713.png" alt="A picture of Jamaria." height="500rem">
         </section>
         <section class="Header-Title_Container">
             <h1 class="Header-Title">About Me</h1>
             <nav class="Header-Nav">
-                <a href="#My_Story">My Story</a>
-                <a href="#My_Vision">My Vision</a>
-                <a href="#Interests">Interests</a>
-                <a href="#Hobbies">Hobbies</a>
+                <div class="A-TAG_Container Head-Icon1" href="#My_Vision">
+                    <img src="./assets/MyVision.png" width="150px">
+                    <a href="#My_Vision">My Vision</a>
+                </div>
+                <div class="A-TAG_Container Head-Icon2">
+                    <img src="./assets/MyStory.png" width="150px">
+                    <a href="#My_Story">My Story</a>
+                </div>
+                <div class="A-TAG_Container Head-Icon3">
+                    <img src="./assets/Interests.png" width="150px">
+                    <a href="#Interests">Interests</a>
+                </div>
+                <div class="A-TAG_Container Head-Icon4">
+                    <img src="./assets/Hobbies.png" width="150px">
+                    <a href="#Hobbies">Hobbies</a>
+                </div>
             </nav>
         </section>
     </header>
     <article class="Article-My_Story">
+        <article class="Article-My_Vision">
+            <h3 id="My_Vision">My Vision</h3>
+            <p>My vision is to be a powerful asset to the people on my team with hard work and dedication. My goal is not only to be the best, but also to bring out the best in others. My mission is to be a part of a team of magicians that can create anything out of nothing.</p>
+        </article>
         <h3 id="My_Story">My Story</h3>
         <p>
             Since I was a child, I have been fascinated with coding and have always wondered how the gears work in the video games I
@@ -163,10 +222,6 @@
             coding as magic because with coding, anything is possible! Everyday I look for creative ways to bring code into my
             environment. Coming up with new ways to solve daily challenges whenever it's possible.
         </P>
-    </article>
-    <article class="Article-My_Vision">
-        <h3 id="My_Vision">My Vision</h3>
-        <p>My vision is to be a powerful asset to the people on my team with hard work and dedication. My goal is not only to be the best, but also to bring out the best in others. My mission is to be a part of a team of magicians that can create anything out of nothing.</p>
     </article>
     <article>
         <h3>Interests & Hobbies</h3>
@@ -251,10 +306,22 @@
     </article>
     <footer>
         <nav class="Header-Nav">
-            <a href="#My_Story">My Story</a>
-            <a href="#My_Vision">My Vision</a>
-            <a href="#Interests">Interests</a>
-            <a href="#Hobbies">Hobbies</a>
+            <div class="A-TAG_Container" href="#My_Vision">
+                <img src="./assets/MyVision.png" width="150px">
+                <a href="#My_Vision">My Vision</a>
+            </div>
+            <div class="A-TAG_Container">
+                <img src="./assets/MyStory.png" width="150px">
+                <a href="#My_Story">My Story</a>
+            </div>
+            <div class="A-TAG_Container">
+                <img src="./assets/Interests.png" width="150px">
+                <a href="#Interests">Interests</a>
+            </div>
+            <div class="A-TAG_Container">
+                <img src="./assets/Hobbies.png" width="150px">
+                <a href="#Hobbies">Hobbies</a>
+            </div>
         </nav>
     </footer>
 </body>
