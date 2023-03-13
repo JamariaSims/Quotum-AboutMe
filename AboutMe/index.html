@@ -10,10 +10,13 @@
         ----Page Styling----
         */
         :root{
-            --H1_Size1: 4rem;
-            --H2_Size2: 3rem;
-            --H3_Size3: 2rem;
-            --H4_Size4: 1rem;
+            --H_Size1: 4rem;
+            --H_Size2: 3rem;
+            --H_Size3: 2.5rem;
+            --H_Size4: 1rem;
+            --Text_Size1: 1rem;
+            --Text_Size2: 1.5rem;
+            --Text_Size3: 2rem;
             --Color1: #edede9;
             --Color2: #d6ccc2;
             --Color3: #f5ebe0;
@@ -26,10 +29,13 @@
             text-align: center;
         }
         h1{
-            font-size: var(--H1_Size1);
+            font-size: var(--H_Size1);
         }
         h2{
-            font-size: var(--H2_Size2);
+            font-size: var(--H_Size2);
+        }
+        h3{
+            font-size: var(--H_Size3);
         }
         /*
         ----Header Styling----
@@ -69,6 +75,13 @@
         .Profile-Picture{
             border-radius: 5rem;
         }
+        article p{
+            text-align: left;
+            margin: 0% auto;
+            width: 80%;
+            font-size: var(--Text_Size2);
+            line-height: 3rem;
+        }
     </style>
 </head>
 <body>
@@ -87,6 +100,29 @@
             </nav>
         </section>
     </header>
+    <article>
+        <h3>My Story</h3>
+        <p>
+            Since I was a child, I have been fascinated with coding and have always wondered how the gears work in the video games I
+            play. Over time, that mystery became clear and I had to learn more about it. For example, to create a game like Call Of
+            Duty you will need models, music, sound effects, and animations. Then there is code to tie it all together. It sounds
+            simple, but that isn't the case. Each branch has multiple parts to it which would take many hours to learn just for that
+            one section. So what did I do? Pick one subject to focus on? That's what a smart person would do. No! I attempted to
+            learn them all. I fell down a rabbit hole and gave up on that dream.
+        </p>
+        <p>
+            Then I got older and wiser. Upon reflection, I realized I was terrible at modeling and animation. I'm talented at music
+            and sound effects but I'm a master at coding. That's when it hit me. I don't care about creating games. I love creating
+            logic. So I must devote all my attention to coding. Got sucked down another rabbit hole with YouTube but this time it
+            was different. I was learning but the things I was learning didn't have any structure or use for me. Since I needed
+            skills to be able to join a gaming studio. I decided to join a coding boot camp.
+        </p>
+        <P>
+            So who am I? I'm Jamaria! A full-stack developer on a mission to change the world line by line. I like to refer to
+            coding as magic because with coding, anything is possible! Everyday I look for creative ways to bring code into my
+            environment. Coming up with new ways to solve daily challenges whenever it's possible.
+        </P>
+    </article>
 </body>
 </html>
 
