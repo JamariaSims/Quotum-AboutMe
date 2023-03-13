@@ -13,7 +13,7 @@
             --H_Size1: 4rem;
             --H_Size2: 3rem;
             --H_Size3: 2.5rem;
-            --H_Size4: 1rem;
+            --H_Size4: 2rem;
             --Text_Size1: 1rem;
             --Text_Size2: 1.5rem;
             --Text_Size3: 2rem;
@@ -33,9 +33,13 @@
         }
         h2{
             font-size: var(--H_Size2);
+            color: rgb(255, 0, 0);
         }
         h3{
             font-size: var(--H_Size3);
+        }
+        h4{
+            font-size: var(--H_Size4);
         }
         /*
         ----Header Styling----
@@ -45,6 +49,16 @@
             text-align: center;
             margin: 0% auto;
             padding-block: 1rem;
+        }
+        a{
+            text-decoration: none;
+            color: #ff0000;
+            padding: 0% auto;
+            
+        }
+        a:hover{
+            color: black;
+            border-bottom: black solid 0.1rem;
         }
         .Header-Title_Container{
             width: 100%;
@@ -82,6 +96,26 @@
             font-size: var(--Text_Size2);
             line-height: 3rem;
         }
+        .Article-My_Vision p{
+            text-align: center;
+        }
+        .Interests-Section,.Hobbies-Section{
+            display: grid;
+            gap: 0.1rem;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .Interests-Container,.Hobbies-Container{
+            width: 1fr;
+            margin: 0% auto;
+        }
+        .Interests-Container p, .Hobbies-Container p{
+            text-align: center;
+            font-size: var(--Text_Size3);
+        }
+        .Interests-Container img, .Hobbies-Container img{
+            width: 39.5rem;
+            height: 30rem;
+        }
     </style>
 </head>
 <body>
@@ -93,15 +127,15 @@
         <section class="Header-Title_Container">
             <h1 class="Header-Title">About Me</h1>
             <nav class="Header-Nav">
-                <a>My Story</a>
-                <a>My Vision</a>
-                <a>Interests & Hobbies</a>
-                <a>Gallery</a>
+                <a href="#My_Story">My Story</a>
+                <a href="#My_Vision">My Vision</a>
+                <a href="#Interests">Interests</a>
+                <a href="#Hobbies">Hobbies</a>
             </nav>
         </section>
     </header>
     <article class="Article-My_Story">
-        <h3>My Story</h3>
+        <h3 id="My_Story">My Story</h3>
         <p>
             Since I was a child, I have been fascinated with coding and have always wondered how the gears work in the video games I
             play. Over time, that mystery became clear and I had to learn more about it. For example, to create a game like Call Of
@@ -110,6 +144,7 @@
             one section. So what did I do? Pick one subject to focus on? That's what a smart person would do. No! I attempted to
             learn them all. I fell down a rabbit hole and gave up on that dream.
         </p>
+        <br>
         <p>
             Then I got older and wiser. Upon reflection, I realized I was terrible at modeling and animation. I'm talented at music
             and sound effects but I'm a master at coding. That's when it hit me. I don't care about creating games. I love creating
@@ -117,6 +152,7 @@
             was different. I was learning but the things I was learning didn't have any structure or use for me. Since I needed
             skills to be able to join a gaming studio. I decided to join a coding boot camp.
         </p>
+        <br>
         <P>
             So who am I? I'm Jamaria! A full-stack developer on a mission to change the world line by line. I like to refer to
             coding as magic because with coding, anything is possible! Everyday I look for creative ways to bring code into my
@@ -124,8 +160,89 @@
         </P>
     </article>
     <article class="Article-My_Vision">
-        <h3>My Vision</h3>
-        <p>My vision is to be a powerful asset to the people on my team with hard work and dedication. My goal is not only to be the best, but also to bring out the best in others. My mission is to be a part of a team of magician that can create anything out of nothing.</p>
+        <h3 id="My_Vision">My Vision</h3>
+        <p>My vision is to be a powerful asset to the people on my team with hard work and dedication. My goal is not only to be the best, but also to bring out the best in others. My mission is to be a part of a team of magicians that can create anything out of nothing.</p>
+    </article>
+    <article>
+        <h3>Interests & Hobbies</h3>
+        <h4 id="Interests">Interests</h4>
+        <section class="Interests-Section">
+            <div class="Interests-Container">
+                <img src="https://s3.amazonaws.com/utep-uploads/wp-content/uploads/sparkle-box/2019/12/26110832/game-developer-designs-model-compressor.jpg" alt="A picture of a man using a computer">
+                <p>Video Game Development</p>
+            </div>
+            <div class="Interests-Container">
+                <img src="https://idsb.tmgrup.com.tr/ly/uploads/images/2023/02/21/258632.jpg">
+                <p>Outer Space</p>
+            </div>
+            <div class="Interests-Container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw9MoZpqkLgcjLSb1phmel_TSXaDk99cB5EA&usqp=CAU">
+                <p>Music Production</p>
+            </div>
+            <div class="Interests-Container">
+                <img src="https://www.analyticsinsight.net/wp-content/uploads/2020/12/Artificial-Intelligence-11.jpg">
+                <p>AI Technology</p>
+            </div>
+            <div class="Interests-Container">
+                <img src="https://media.nomadicmatt.com/2018/running_travel.jpg">
+                <p>Staying Active</p>
+            </div>
+            <div class="Interests-Container">
+                <img src="https://www.costaricadiveandsurf.com/wp-content/uploads/2021/12/Group-of-divers-in-cavern.jpeg">
+                <p>Adventure</p>
+            </div>
+            <div class="Interests-Container">
+                <img src="https://www.planetware.com/wpimages/2023/01/uae-dubai-beaches-beach-view-with-city-behind.jpg">
+                <p>Travel</p>
+            </div>
+            <div class="Interests-Container">
+                <img src="https://d2uqfpnktc64mn.cloudfront.net/uploads/post/image/000/000/598/default_7623578306_438ac31945_o.jpg">
+                <p>Extreme Sports</p>
+            </div>
+            <div class="Interests-Container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMfAYl3WnPRSTz94k9NBQh-iMx10duA8aHqg&usqp=CAU" alt="A picture of a man using a computer">
+                <p>Programming</p>
+            </div>
+        </section>
+        <h4 id="Hobbies">Hobbies</h4>
+        <section class="Hobbies-Section">
+            <div class="Hobbies-Container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6SqtVxaj5227yveVOeSPmQ2jkLDxcH09Uyw&usqp=CAU">
+                <p>Boxing</p>
+            </div>
+            <div class="Hobbies-Container">
+                <img src="https://cdn.mos.cms.futurecdn.net/Ho4csbSkay7r3yUTmXC64Y.jpg">
+                <p>Making Music</p>
+            </div>
+            <div class="Hobbies-Container">
+                <img src="https://ggie.berkeley.edu/wp-content/uploads/2019/09/Listening_to_Music_Mindfully_1200x630.jpg">
+                <p>Listening To Music</p>
+            </div>
+            <div class="Hobbies-Container">
+                <img src="https://static.toiimg.com/photo/95577114.cms">
+                <p>Traveling</p>
+            </div>
+            <div class="Hobbies-Container">
+                <img src="https://i.ytimg.com/vi/JmIEdBaFvpk/maxresdefault.jpg">
+                <p>Coding Challenges</p>
+            </div>
+            <div class="Hobbies-Container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn0g9XHrqwpJ2M2ciT0ZPeQkxMafMjZ6Xz2w&usqp=CAU">
+                <p>Playing Games</p>
+            </div>
+            <div class="Hobbies-Container">
+                <img src="https://assets.sweat.com/html_body_blocks/images/000/021/037/original/Y2018_Summer_Series_Gym_Kelsey_14_074_imagelibrary_Low_res_1200x800_5b2df79_en49c503d8e64bde140b1a113c5926d9d6.jpg?1657780099">
+                <p>Working Out</p>
+            </div>
+            <div class="Hobbies-Container">
+                <img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX18061566.jpg">
+                <p>Going Out</p>
+            </div>
+            <div class="Hobbies-Container">
+                <img src="https://www.therock.net.nz/content/dam/radio/rock-migration/2019/12/bowling-fail.jpg">
+                <p>Bowling</p>
+            </div>
+        </section>
     </article>
 </body>
 </html>
