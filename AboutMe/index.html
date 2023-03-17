@@ -129,7 +129,7 @@
             animation-duration: 1s; 
         }
         .Profile-Picture{
-            width: 25rem;
+            width: 20vw;
             border-radius: 100%;
         }
         .A-TAG_Container{
@@ -177,14 +177,80 @@
     100% {
     transform: scale3d(1,1,1);
     }
-    
-}
+    }
+    @media screen and (max-width: 2100px) {
+        .Interests-Section,.Hobbies-Section{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-bottom: 10%;
+        }
+
+    }
+    @media screen and (max-width: 1500px) {
+        header{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .Header-Title_Container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .Header-Nav{
+            margin: 0% auto;
+            padding: 0%;
+        }
+        .Header-Title{
+            padding: 0%;
+        }
+        .Header-Nav div{
+            padding: 0%;
+        }
+        .Header-Nav img{
+            margin: 0% auto;
+        }
+        .Profile-Container{
+            width: 100%;
+            padding: 0%;
+            margin: 0% auto;
+        }
+        .Profile-Picture{
+            width: 40vw;
+            padding: 0%;
+            margin: 0% auto;
+        }
+        .Interests-Section, .Hobbies-Section{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+    @media screen and (max-width: 850px) {
+        .Header-Nav{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    @media screen and (max-width: 700px) {
+        article section img{
+            box-sizing: border-box;
+            max-width: 400px;
+        }
+    }
+    @media screen and (max-width: 450px) {
+        article section img{
+            box-sizing: border-box;
+            max-width: 200px;
+        }
+    }
+
+
     </style>
 </head>
 <body>
     <header>
         <section class="Profile-Container">
-            <img class="Profile-Picture" src="./assets/IMG_8713.png" alt="A picture of Jamaria." height="500rem">
+            <img class="Profile-Picture" src="./assets/IMG_8713.png" alt="A picture of Jamaria." >
         </section>
         <section class="Header-Title_Container">
             <h1 class="Header-Title">About Me</h1>
